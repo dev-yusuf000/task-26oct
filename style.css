@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e3e3cc;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#yp:hover {
+    cursor: pointer;
+    transform: translateY(1px);
+    text-shadow: 2px 2px 4px grey;
+}
+
+.head a {
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+}
+
+.head a:hover {
+    cursor: pointer;
+    transform: translateX(2px);
+    text-shadow: 2px 2px 4px grey;
+}
+
+#btn {
+    background-color: rgb(19, 5, 5);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#btn:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    ;
+}
+
+.vision {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+}
+
+.vision {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+}
+
+#p01 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 12px;
+    color: gray;
+}
+
+#resume {
+    grid-column: 3;
+    grid-row: 1;
+    color: rgb(1, 87, 1);
+    font-size: 12px;
+    text-align: end;
+}
+
+#engr {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#web {
+    font-size: 40px;
+    font-style: italic;
+    font-family: cursive;
+    color: rgb(1, 87, 1)
+}
+
+.ew {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.vision:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+.available {
+    grid-column: 4;
+    grid-row: 1;
+    border: 1px;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.available:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+#greendot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blink 2s infinite;
+}
+
+/* @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+) */
+
+#avp1 {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+#avp2 {
+    font-weight: bold;
+}
+#avp3 {
+    font-size: 12px;
+}
+.location {
+    grid-column: 4;
+    grid-row: 2;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.location:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+#locp1 {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+#locp2 {
+    font-weight: bold;
+}
+#locp3 {
+    font-size: 12px;
+}
+
+.about {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.about:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+.about::after {
+    content: "An aspiring software engineer driven by a passion for technology, problem-solving, and creating innovative software solutions. I take initiative in expanding my programming expertise, strengthening my technical abilities, and developing applications that address real-world challenges. My goal is to growinto a highly capable software engineer who delivers meaningful results and contributes to impactful projects that create lasting value.";
+}
+#abp1 {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+#adp2 {
+    padding-top: 20px;
+}
+
+.trusted {
+    grid-column: 3 / 5;
+    grid-row: 3;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+    font-size: 10PX;
+    padding: 20px;
+}
+
+.trusted:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+#p1 {
+    color: darkgrey;
+}
+
+#p2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.see {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: rgb(19, 5, 5);
+    color: beige;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+}
+
+.see #view {
+    font-size: 10px;
+    padding: 10px;
+    color: bisque;
+}
+
+.see:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+.github {
+    grid-column: 4;
+    grid-row: 4;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    color: rgb(1, 85, 1);
+}
+
+.github:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 1px 10px 10px rgb(0, 0, 0, 0.1);
+}
